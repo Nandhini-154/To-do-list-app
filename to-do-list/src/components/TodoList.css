@@ -1,0 +1,123 @@
+/* TodoList.css */
+
+body {
+    background-color: rgb(51, 2, 163) ;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color:rgba(63, 22, 156, 0.575);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    color: #38caf7;
+  }
+  
+  .mb-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    flex: 1;
+    margin-right: 20px;
+    padding: 15px;
+    outline:none;
+    border-radius: 5px;
+  }
+  
+  .btn-primary,
+  .btn-warning,
+  .btn-success,
+  .btn-danger {
+    width: calc(33.33% - 10px);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .btn-primary {
+    background-color: transparent;
+    border: 2px solid #2196f3;
+    color: #2196f3;
+  }
+  
+  .btn-primary:hover {
+    background-color: #09a1cf;
+    color: #ffffff;
+  }
+  
+  .btn-warning {
+    background-color: transparent;
+    border: 2px solid #ff9800;
+    color: #ff9800;
+  }
+  
+  .btn-warning:hover {
+    background-color: #ff9800;
+    color: #ffffff;
+  }
+  
+  .btn-success {
+    background-color: transparent;
+    border: 2px solid #4caf50;
+    color: #4caf50;
+  }
+  
+  .btn-success:hover {
+    background-color: #4caf50;
+    color: #ffffff;
+  }
+  
+  .btn-danger {
+    background-color: transparent;
+    border: 2px solid #e53935;
+    color: #e53935;
+  }
+  
+  .btn-danger:hover {
+    background-color: #e53935;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      margin-top: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .form-control {
+      margin-right: 0;
+      margin-bottom: 10px;
+      outline:none;
+    }
+  
+    .btn-primary,
+    .btn-warning,
+    .btn-success,
+    .btn-danger {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
